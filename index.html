@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMMU CREATION PSD Buyre's</title>
+  <style>
+    /* Reset and General Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f0f5; /* Light background */
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* App Bar */
+    .app-bar {
+      width: 100%;
+      background: #007aff; /* iPhone Blue */
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      border-radius: 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    /* Form Container */
+    .form-container {
+      background: #ffffff;
+      border-radius: 30px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      width: 100%;
+      max-width: 450px;
+      animation: fadeIn 1.2s ease;
+      margin-top: 70px; /* Adjusted to make space for the app bar */
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Form Title */
+    h2 {
+      font-size: 28px;
+      color: #007aff; /* iOS Blue */
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    /* Description */
+    .description {
+      font-size: 15px;
+      color: #666;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    /* Labels */
+    label {
+      font-size: 15px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    /* Inputs, Select, and Textarea */
+    input, select, textarea {
+      width: 100%;
+      padding: 16px;
+      margin: 12px 0;
+      border: 1px solid #ccc;
+      border-radius: 18px;
+      font-size: 16px;
+      background: #f9f9f9;
+      color: #333;
+      transition: all 0.3s ease;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #007aff;
+      box-shadow: 0 0 5px rgba(0, 122, 255, 0.6);
+      outline: none;
+    }
+
+    /* Button */
+    button {
+      background: #007aff;
+      color: white;
+      padding: 16px;
+      border: none;
+      border-radius: 18px;
+      font-size: 18px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 122, 255, 0.2);
+    }
+
+    button:hover {
+      background: #0051a8;
+      box-shadow: 0 6px 12px rgba(0, 122, 255, 0.4);
+    }
+
+    button:active {
+      background: #003b6b;
+      box-shadow: 0 4px 10px rgba(0, 122, 255, 0.4);
+    }
+
+    /* Error Messages */
+    .error {
+      color: #e74c3c;
+      font-size: 13px;
+      margin-top: -8px;
+      margin-bottom: 12px;
+    }
+
+    /* Success Message */
+    .success {
+      color: #2ecc71;
+      font-size: 16px;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    /* Footer Styling */
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      color: #999;
+      margin-top: 30px;
+      width: 100%;
+    }
+
+    .footer a {
+      color: #007aff;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 24px;
+      }
+
+      .description {
+        font-size: 14px;
+      }
+
+      input, select, textarea {
+        font-size: 15px;
+        padding: 14px;
+      }
+
+      button {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h2 {
+        font-size: 20px;
+      }
+
+      .description {
+        font-size: 13px;
+      }
+
+      input, select, textarea {
+        font-size: 14px;
+        padding: 12px;
+      }
+
+      button {
+        font-size: 15px;
+      }
+    }
+
+    /* Thank You Card */
+    .thank-you-card {
+      display: none;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .thank-you-card h2 {
+      color: #007aff;
+      font-size: 32px;
+    }
+
+    .thank-you-card p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* Close Button */
+    .close-btn {
+      background: #e74c3c;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 18px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .close-btn:hover {
+      background: #c0392b;
+    }
+  </style>
+</head>
+<body>
+  <!-- App Bar -->
+  <div class="app-bar">
+    AMMU CREATION PSD
+  </div>
+
+  <!-- Form Container -->
+  <div class="form-container" id="formContainer">
+    <h2>Submit Info</h2>
+    <p class="description">Fill out the form with your details. File automatic send your Mail id..</p>
+    <p class="description">Contact : +91 70946 09411</p>
+    <form id="sheetForm" onsubmit="return validateForm(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-Mail:</label>
+      <input type="email" id="email" name="email" required autocomplete="email">
+
+      <label for="businessName">Business Name:</label>
+      <input type="text" id="businessName" name="businessName" required>
+
+      <label for="contact">Contact (10-digit):</label>
+      <input type="tel" id="contact" name="contact" required pattern="^[0-9]{10}$" title="Enter a 10-digit number" maxlength="10" autocomplete="tel">
+
+      <label for="size">Size:</label>
+      <select id="size" name="size" required>
+        <option value="">Select Size</option>
+        <option value="( 12 X 36 )  +  ( 15 X 24 ) All PSD">( 12 X 36 )  +  ( 15 X 24 ) All PSD</option>
+        <option value="12 X 36">12 X 36</option>
+        <option value="15 X 24">15 X 24</option>
+      </select>
+      <div id="sizeError" class="error"></div>
+
+      <label for="buyPrice">Buy Price:</label>
+      <select id="buyPrice" name="buyPrice" required>
+        <option value="">Select Buy Price</option>
+        <option value="150">₹150</option>
+        <option value="300">₹300</option>
+        <option value="500">₹500</option>
+        <option value="600">₹600</option>
+        <option value="700">₹700</option>
+        <option value="1000">₹1000</option>
+        <option value="1200">₹1200</option>
+      </select>
+      <div id="buyPriceError" class="error"></div>
+
+      <label for="reviews">Any Reviews:</label>
+      <textarea id="reviews" name="reviews" rows="4"></textarea>
+
+      <button type="submit">Submit</button>
+      <div id="submitMessage" class="success"></div>
+    </form>
+  </div>
+
+  <!-- Thank You Card -->
+  <div class="thank-you-card" id="thankYouCard">
+    <h2>Thank You!</h2>
+    <p>Google Drive Download Link Auto Send your Mail id, Please Wait 5min to 1hr..</p>
+    <p>Thanking you..!</p>
+    <button class="close-btn" onclick="closeThankYouCard()">Close</button>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2025 <a href="#">AMMU CREATION PSD</a>. All Rights Reserved.</p>
+  </div>
+
+  <script>
+    function validateForm(event) {
+      let isValid = true;
+      document.getElementById("sizeError").textContent = "";
+      document.getElementById("buyPriceError").textContent = "";
+
+      const size = document.getElementById("size").value;
+      const buyPrice = document.getElementById("buyPrice").value;
+
+      if (size === "") {
+        document.getElementById("sizeError").textContent = "Please select a size.";
+        isValid = false;
+      }
+
+      if (buyPrice === "") {
+        document.getElementById("buyPriceError").textContent = "Please select a buy price.";
+        isValid = false;
+      }
+
+      if (isValid) {
+        const formData = {
+          name: document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          businessName: document.getElementById("businessName").value,
+          contact: document.getElementById("contact").value,
+          size: document.getElementById("size").value,
+          buyPrice: document.getElementById("buyPrice").value,
+          reviews: document.getElementById("reviews").value
+        };
+
+        // Send form data to Google Sheets
+        fetch('https://script.google.com/macros/s/AKfycbxg6jARDJZtWBoPql0o66MLlnQjteQnBvfjogu_OhDWHqEwz-5kpTMpjlog9owksCc7/exec', {
+          method: 'POST',
+          body: JSON.stringify(formData),
+        })
+        .then(response => response.json())
+        .then(data => {
+          // Hide form and show Thank You card
+          document.getElementById("formContainer").style.display = "none";
+          document.getElementById("thankYouCard").style.display = "block";
+        })
+        .catch(error => {
+          // Show error message
+          document.getElementById("submitMessage").textContent = "Error submitting the form. Please try again.";
+          document.getElementById("submitMessage").style.color = "#e74c3c";
+        });
+
+        // Prevent form submission for page reload
+        event.preventDefault();
+      }
+
+      return false;
+    }
+
+    function closeThankYouCard() {
+      
+      // Redirect to WhatsApp with the message
+      const name = document.getElementById("name").value;
+      const size = document.getElementById("size").value;
+      const buyPrice = document.getElementById("buyPrice").value;
+      const email = document.getElementById("email").value;
+      const message = `Buy Details: \n\nName: ${name} \nSize: ${size} \nBuy Price: ₹${buyPrice} \nE-Mail : ${email}`;
+
+      const whatsappLink = `https://wa.me/917094609411?text=${encodeURIComponent(message)}`;
+      window.location.href = whatsappLink;
+
+      // Clear the form fields
+      document.getElementById("sheetForm").reset();
+      
+    }
+  </script>
+</body>
+</html>
