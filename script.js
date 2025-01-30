@@ -63,7 +63,6 @@ function validateForm(event) {
     document.getElementById("formContainer").style.display = "none";
     document.getElementById("progressContainer").style.display = "block";
     document.getElementById("footer").style.display = "none";
-    document.getElementById("app-bar").style.display = "none";
   }
 
   function hideProgressBar() {
@@ -123,7 +122,8 @@ function validateForm(event) {
       window.location.href = whatsappLink;
     } else {
       // Hide the thank you card and reset the form
-    
+      document.getElementById("thankYouCard").style.display = "none";
+      document.getElementById("formContainer").style.display = "block";
       document.getElementById("sheetForm").reset();
     }
   }
