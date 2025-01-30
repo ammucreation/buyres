@@ -93,66 +93,99 @@ function validateForm(event) {
     if (size == "15 X 24 - (100 PSD)") {
       const whatsappLink = `https://wa.me/917094609411?text=${encodeURIComponent(message_15x24)}`;
       window.location.href = whatsappLink;
+      document.getElementById("formContainer").style.display = "block";
+      document.getElementById("footer").style.display = "block";
+      document.getElementById("app-bar").style.display = "block";
       document.getElementById("sheetForm").reset();
       
 
     } else if (size == "12 X 36 - (315 PSD)") {
       const whatsappLink = `https://wa.me/917094609411?text=${encodeURIComponent(message_12x36)}`;
       window.location.href = whatsappLink;
+      document.getElementById("formContainer").style.display = "block";
+      document.getElementById("footer").style.display = "block";
+      document.getElementById("app-bar").style.display = "block";
       document.getElementById("sheetForm").reset();
      
 
     } else if (size == "( 12 X 36 )  +  ( 15 X 24 ) All PSD") {
       const whatsappLink = `https://wa.me/917094609411?text=${encodeURIComponent(message_all_psd)}`;
       window.location.href = whatsappLink;
+      document.getElementById("formContainer").style.display = "block";
+      document.getElementById("footer").style.display = "block";
+      document.getElementById("app-bar").style.display = "block";
       document.getElementById("sheetForm").reset();
       
 
     } else if (size == "12 X 36 - Bride PSD") {
       const whatsappLink = `https://wa.me/917094609411?text=${encodeURIComponent(message_bride)}`;
       window.location.href = whatsappLink;
+      document.getElementById("formContainer").style.display = "block";
+      document.getElementById("footer").style.display = "block";
+      document.getElementById("app-bar").style.display = "block";
       document.getElementById("sheetForm").reset();
       
 
     } else if (size == "12 X 36 - Groom PSD") {
       const whatsappLink = `https://wa.me/917094609411?text=${encodeURIComponent(message_groom)}`;
       window.location.href = whatsappLink;
+      document.getElementById("formContainer").style.display = "block";
+      document.getElementById("footer").style.display = "block";
+      document.getElementById("app-bar").style.display = "block";
       document.getElementById("sheetForm").reset();
      
 
     } else if (size == "12 X 36 - Couple PSD") {
       const whatsappLink = `https://wa.me/917094609411?text=${encodeURIComponent(message_couple)}`;
       window.location.href = whatsappLink;
+      document.getElementById("formContainer").style.display = "block";
+      document.getElementById("footer").style.display = "block";
+      document.getElementById("app-bar").style.display = "block";
       document.getElementById("sheetForm").reset();
       
 
     } else if (size == "12 X 36 - Group -1 PSD") {
       const whatsappLink = `https://wa.me/917094609411?text=${encodeURIComponent(message_group_1)}`;
       window.location.href = whatsappLink;
+      document.getElementById("formContainer").style.display = "block";
+      document.getElementById("footer").style.display = "block";
+      document.getElementById("app-bar").style.display = "block";
       document.getElementById("sheetForm").reset();
       
       
     } else if (size == "12 X 36 - Group -2 PSD") {
       const whatsappLink = `https://wa.me/917094609411?text=${encodeURIComponent(message_group_2)}`;
       window.location.href = whatsappLink;
+      document.getElementById("formContainer").style.display = "block";
+      document.getElementById("footer").style.display = "block";
+      document.getElementById("app-bar").style.display = "block";
       document.getElementById("sheetForm").reset();
       
 
     } else if (size == "12 X 36 - Group -3 PSD") {
       const whatsappLink = `https://wa.me/917094609411?text=${encodeURIComponent(message_group_3)}`;
       window.location.href = whatsappLink;
+      document.getElementById("formContainer").style.display = "block";
+      document.getElementById("footer").style.display = "block";
+      document.getElementById("app-bar").style.display = "block";
       document.getElementById("sheetForm").reset();
       
       
     } else if (size == "12 X 36 - Group -4 PSD") {
       const whatsappLink = `https://wa.me/917094609411?text=${encodeURIComponent(message_group_4)}`;
       window.location.href = whatsappLink;
+      document.getElementById("formContainer").style.display = "block";
+      document.getElementById("footer").style.display = "block";
+      document.getElementById("app-bar").style.display = "block";
       document.getElementById("sheetForm").reset();
      
 
     } else if (size == "12 X 36 - Group -5 PSD") {
       const whatsappLink = `https://wa.me/917094609411?text=${encodeURIComponent(message_group_5)}`;
       window.location.href = whatsappLink;
+      document.getElementById("formContainer").style.display = "block";
+      document.getElementById("footer").style.display = "block";
+      document.getElementById("app-bar").style.display = "block";
       document.getElementById("sheetForm").reset();      
 
     } else {
