@@ -96,6 +96,7 @@ function validateForm(event) {
       document.getElementById("formContainer").style.display = "block";
       document.getElementById("footer").style.display = "block";
       document.getElementById("app-bar").style.display = "block";
+      document.getElementById("thankYouCard").style.display = "none";
       document.getElementById("sheetForm").reset();
       
 
@@ -105,6 +106,7 @@ function validateForm(event) {
       document.getElementById("formContainer").style.display = "block";
       document.getElementById("footer").style.display = "block";
       document.getElementById("app-bar").style.display = "block";
+      document.getElementById("thankYouCard").style.display = "none";
       document.getElementById("sheetForm").reset();
      
 
@@ -114,6 +116,7 @@ function validateForm(event) {
       document.getElementById("formContainer").style.display = "block";
       document.getElementById("footer").style.display = "block";
       document.getElementById("app-bar").style.display = "block";
+      document.getElementById("thankYouCard").style.display = "none";
       document.getElementById("sheetForm").reset();
       
 
@@ -123,6 +126,7 @@ function validateForm(event) {
       document.getElementById("formContainer").style.display = "block";
       document.getElementById("footer").style.display = "block";
       document.getElementById("app-bar").style.display = "block";
+      document.getElementById("thankYouCard").style.display = "none";
       document.getElementById("sheetForm").reset();
       
 
@@ -132,6 +136,7 @@ function validateForm(event) {
       document.getElementById("formContainer").style.display = "block";
       document.getElementById("footer").style.display = "block";
       document.getElementById("app-bar").style.display = "block";
+      document.getElementById("thankYouCard").style.display = "none";
       document.getElementById("sheetForm").reset();
      
 
@@ -141,6 +146,7 @@ function validateForm(event) {
       document.getElementById("formContainer").style.display = "block";
       document.getElementById("footer").style.display = "block";
       document.getElementById("app-bar").style.display = "block";
+      document.getElementById("thankYouCard").style.display = "none";
       document.getElementById("sheetForm").reset();
       
 
@@ -150,6 +156,7 @@ function validateForm(event) {
       document.getElementById("formContainer").style.display = "block";
       document.getElementById("footer").style.display = "block";
       document.getElementById("app-bar").style.display = "block";
+      document.getElementById("thankYouCard").style.display = "none";
       document.getElementById("sheetForm").reset();
       
       
@@ -159,6 +166,7 @@ function validateForm(event) {
       document.getElementById("formContainer").style.display = "block";
       document.getElementById("footer").style.display = "block";
       document.getElementById("app-bar").style.display = "block";
+      document.getElementById("thankYouCard").style.display = "none";
       document.getElementById("sheetForm").reset();
       
 
@@ -168,6 +176,7 @@ function validateForm(event) {
       document.getElementById("formContainer").style.display = "block";
       document.getElementById("footer").style.display = "block";
       document.getElementById("app-bar").style.display = "block";
+      document.getElementById("thankYouCard").style.display = "none";
       document.getElementById("sheetForm").reset();
       
       
@@ -177,6 +186,7 @@ function validateForm(event) {
       document.getElementById("formContainer").style.display = "block";
       document.getElementById("footer").style.display = "block";
       document.getElementById("app-bar").style.display = "block";
+      document.getElementById("thankYouCard").style.display = "none";
       document.getElementById("sheetForm").reset();
      
 
@@ -186,6 +196,7 @@ function validateForm(event) {
       document.getElementById("formContainer").style.display = "block";
       document.getElementById("footer").style.display = "block";
       document.getElementById("app-bar").style.display = "block";
+      document.getElementById("thankYouCard").style.display = "none";
       document.getElementById("sheetForm").reset();      
 
     } else {
